@@ -15,9 +15,7 @@ int algoritm(int numero,int cycles){
 
 int main(int argc, char *argv[]) {
     int inicio,final,mayor=0;
-    int k=0;
-    while(k!=1) {
-        cin >> inicio >> final;
+    while(cin >> inicio >> final) {
         for (int i = inicio; i < final; i++) {
             if (algoritm(i, 0) > mayor)
                 mayor = algoritm(i, 0);
